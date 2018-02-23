@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/lnRoot"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rowHeightInputModify">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center|left"
+                android:orientation="vertical">
+
+                <com.orion.salesman._class.RobotoTextView
+                    android:id="@+id/tvProductCode"
+                    style="@style/CodeFontRowNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center|left"
+                    android:text="A51515"
+                    android:textColor="@color/colorBlue" />
+
+                <com.orion.salesman._class.RobotoTextView
+                    android:id="@+id/tvOne"
+                    style="@style/CodeFontRowNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center|left"
+                    android:text="CP 12P" />
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.36"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <com.orion.salesman._class.RobotoTextViewMedium
+                            android:id="@+id/tvTwo"
+                            style="@style/CodeFontRowNew"
+                            android:layout_weight="0.6"
+                            android:text="@string/qty"
+                            android:textAllCaps="true" />
+
+                        <com.orion.salesman._class.RobotoTextViewMedium
+                            android:id="@+id/tvThree"
+                            style="@style/CodeFontRowNew"
+                            android:layout_weight="0.4"
+                            android:text="@string/amt"
+                            android:textAllCaps="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.36"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <com.orion.salesman._class.RobotoTextViewMedium
+                            android:id="@+id/tvFour"
+                            style="@style/CodeFontRowNew"
+                            android:layout_weight="0.6"
+                            android:text="@string/qty"
+                            android:textAllCaps="true" />
+
+                        <com.orion.salesman._class.RobotoTextViewMedium
+                            android:id="@+id/tvFive"
+                            style="@style/CodeFontRowNew"
+                            android:layout_weight="0.4"
+                            android:text="@string/amt"
+                            android:textAllCaps="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.28"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <com.orion.salesman._class.RobotoTextViewMedium
+                            android:id="@+id/tvSix"
+                            style="@style/CodeFontRowNew"
+                            android:gravity="center"
+                            android:text="@string/pmtyn"
+                            android:textAllCaps="true" />
+
+                        <ImageView
+                            android:id="@+id/imgPMT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/table_ic_yes"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <com.orion.salesman._class.RobotoTextViewMedium
+                            android:id="@+id/tvSeven"
+                            style="@style/CodeFontRowNew"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/cancel" />
+
+                        <com.orion.salesman._class.RobotoTextViewMedium
+                            android:id="@+id/tvCancelClick"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground" />
+
+                        <ImageView
+                            android:id="@+id/imgCancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/table_ic_no"
+                            android:visibility="gone" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_bottom_view"
+            android:layout_gravity="bottom"
+            android:background="@color/background_recyclewview" />
+
+    </FrameLayout>
+
+
+</FrameLayout>

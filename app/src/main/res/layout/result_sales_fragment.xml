@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/result_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_recyclewview"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <com.orion.salesman._class.RobotoTextView
+            style="@style/OrderInforText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/brand" />
+
+        <com.orion.salesman._class.RobotoTextView
+            style="@style/OrderInforText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tgt" />
+
+        <com.orion.salesman._class.RobotoTextView
+            style="@style/OrderInforText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/today" />
+
+        <com.orion.salesman._class.RobotoTextView
+            style="@style/OrderInforText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mtd" />
+
+        <com.orion.salesman._class.RobotoTextView
+            style="@style/OrderInforText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/p_tgt" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcSales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_recyclewview">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/rowHeight_2_item"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.35"
+        android:orientation="vertical">
+
+        <com.orion.salesman._class.RobotoTextView
+            android:id="@+id/tvZero"
+            style="@style/CodeFontText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/period" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.orion.salesman._class.RobotoTextView
+                android:id="@+id/tvOne"
+                style="@style/CodeFontText"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/from" />
+
+            <com.orion.salesman._class.RobotoTextView
+                android:id="@+id/tvTwo"
+                style="@style/CodeFontText"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/to" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.65"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <com.orion.salesman._class.RobotoTextView
+            android:id="@+id/tvThree"
+            style="@style/CodeFontText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:text="@string/prosche" />
+
+        <com.orion.salesman._class.RobotoTextView
+            android:id="@+id/tvFour"
+            style="@style/CodeFontText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="@string/shoptype" />
+    </LinearLayout>
+
+</LinearLayout>

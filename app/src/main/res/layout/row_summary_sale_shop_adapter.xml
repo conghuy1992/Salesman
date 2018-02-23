@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rowHeight"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.orion.salesman._class.RobotoTextView
+                android:id="@+id/tvOne"
+                style="@style/CodeFontRowNew"
+                android:layout_weight="1"
+                android:background="@color/text_parent"
+                android:gravity="center|left"
+                android:text="@string/brand" />
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.orion.salesman._class.RobotoTextView
+                    android:id="@+id/tvTwo"
+                    style="@style/CodeFontRowNew"
+                    android:layout_weight="1"
+                    android:text="@string/brand"
+                    android:textStyle="bold" />
+
+                <com.orion.salesman._class.RobotoTextView
+                    android:id="@+id/tvThree"
+                    style="@style/CodeFontRowNew"
+                    android:layout_weight="1"
+                    android:text="@string/brand"
+                    android:textStyle="bold" />
+
+                <com.orion.salesman._class.RobotoTextView
+                    android:id="@+id/tvFour"
+                    style="@style/CodeFontRowNew"
+                    android:layout_weight="1"
+                    android:text="@string/brand"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_bottom_view"
+            android:layout_gravity="bottom"
+            android:background="@color/background_recyclewview" />
+
+        <LinearLayout
+            android:id="@+id/lnClick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/lnContainsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</LinearLayout>

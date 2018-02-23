@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/rowHeight_2_item"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <com.orion.salesman._class.RobotoTextViewMedium
+        android:id="@+id/tvOne"
+        style="@style/CodeFontText"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:text="@string/item" />
+
+    <com.orion.salesman._class.RobotoTextViewMedium
+        android:id="@+id/tvTwo"
+        style="@style/CodeFontText"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:text="@string/brand" />
+
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2">
+
+        <com.orion.salesman._class.RobotoTextViewMedium
+            android:id="@+id/tvThree"
+            style="@style/CodeFontText"
+            android:gravity="center"
+            android:text="@string/qty"
+            android:textAllCaps="true" />
+
+        <EditText
+            android:id="@+id/edThree"
+            android:layout_width="@dimen/width_input"
+            android:layout_height="@dimen/height_iniput"
+            android:layout_gravity="center"
+            android:background="@drawable/round_date"
+            android:ems="3"
+            android:gravity="center"
+            android:inputType="number"
+            android:padding="5dp"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

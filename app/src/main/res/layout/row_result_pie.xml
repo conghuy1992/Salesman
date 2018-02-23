@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rowHeight">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <com.orion.salesman._class.RobotoTextView
+                android:id="@+id/tvOne"
+                style="@style/CodeFontRowNew"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/text_parent"
+                android:gravity="center|left"
+                android:text="@string/cpie" />
+
+            <com.orion.salesman._class.RobotoTextView
+                android:id="@+id/tvTwo"
+                style="@style/CodeFontRowNew"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/brforestk"
+                android:textStyle="bold" />
+
+            <com.orion.salesman._class.RobotoTextView
+                android:id="@+id/tvThree"
+                style="@style/CodeFontRowNew"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/in"
+                android:textStyle="bold" />
+
+            <com.orion.salesman._class.RobotoTextView
+                android:id="@+id/tvFour"
+                style="@style/CodeFontRowNew"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/out"
+                android:textStyle="bold" />
+
+            <com.orion.salesman._class.RobotoTextView
+                android:id="@+id/tvFive"
+                style="@style/CodeFontRowNew"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/curentstk"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_bottom_view"
+            android:layout_gravity="bottom"
+            android:background="@color/background_recyclewview" />
+
+        <LinearLayout
+            android:id="@+id/lnDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical"></LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/lnChild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>

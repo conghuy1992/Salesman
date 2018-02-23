@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/summary_title" />
+
+        <com.orion.salesman._class.RobotoTextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/lineMargin"
+            android:background="@color/background_recyclewview" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rowHeight"
+                android:background="@color/background_recyclewview"
+                android:orientation="horizontal">
+
+                <com.orion.salesman._class.RobotoTextViewMedium
+                    android:id="@+id/tvOne"
+                    style="@style/CodeFontTextNoLine"
+                    android:layout_weight="1"
+                    android:text="@string/brand"
+                    android:textAllCaps="true" />
+
+                <com.orion.salesman._class.RobotoTextViewMedium
+                    android:id="@+id/tvTwo"
+                    style="@style/CodeFontTextNoLine"
+                    android:layout_width="@dimen/width_summary_sales_report"
+                    android:gravity="center|right"
+                    android:text="@string/targer"
+                    android:textAllCaps="true" />
+
+                <com.orion.salesman._class.RobotoTextViewMedium
+                    android:id="@+id/tvThree"
+                    style="@style/CodeFontTextNoLine"
+                    android:layout_width="@dimen/width_summary_sales_report"
+                    android:gravity="center|right"
+                    android:text="@string/mtd"
+                    android:textAllCaps="true" />
+
+                <com.orion.salesman._class.RobotoTextViewMedium
+                    android:id="@+id/tvFour"
+                    style="@style/CodeFontTextNoLine"
+                    android:layout_width="@dimen/width_summary_sales_report"
+                    android:gravity="center|right"
+                    android:text="@string/p_tgt"
+                    android:textAllCaps="true" />
+
+                <com.orion.salesman._class.RobotoTextViewMedium
+                    android:id="@+id/tvFive"
+                    style="@style/CodeFontTextNoLine"
+                    android:layout_width="@dimen/width_summary_sales_report"
+                    android:gravity="center|right"
+                    android:text="@string/todayTGT"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnTotal"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="@dimen/rowHeight"
+            android:layout_alignParentBottom="true"
+            android:background="@color/background_recyclewview"
+            android:orientation="horizontal">
+
+            <com.orion.salesman._class.RobotoTextViewMedium
+                android:id="@+id/tvSumOne"
+                style="@style/CodeFontRowNew"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="@string/Sum"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+            <com.orion.salesman._class.RobotoTextViewMedium
+                android:id="@+id/tvSumTwo"
+                style="@style/CodeFontRowNew"
+                android:layout_width="@dimen/width_summary_sales_report"
+                android:gravity="center|right"
+                android:text="@string/targer"
+                android:textStyle="bold" />
+
+            <com.orion.salesman._class.RobotoTextViewMedium
+                android:id="@+id/tvSumThree"
+                style="@style/CodeFontRowNew"
+                android:layout_width="@dimen/width_summary_sales_report"
+                android:gravity="center|right"
+                android:text="@string/mtd"
+                android:textStyle="bold" />
+
+            <com.orion.salesman._class.RobotoTextViewMedium
+                android:id="@+id/tvSumFour"
+                style="@style/CodeFontRowNew"
+                android:layout_width="@dimen/width_summary_sales_report"
+                android:gravity="center|right"
+                android:text="@string/p_tgt"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+            <com.orion.salesman._class.RobotoTextViewMedium
+                android:id="@+id/tvSumFive"
+                style="@style/CodeFontRowNew"
+                android:layout_width="@dimen/width_summary_sales_report"
+                android:gravity="center|right"
+                android:text="@string/p_tgt"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <com.orion.salesman._class.RobotoTextView
+            android:id="@+id/tvNodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/nodata"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</FrameLayout>

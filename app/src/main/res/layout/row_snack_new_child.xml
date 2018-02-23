@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/rowHeightInputModify"
+    android:background="@drawable/border_dot"
+    android:orientation="horizontal">
+
+    <com.orion.salesman._class.RobotoTextView
+        android:id="@+id/tvOne"
+        style="@style/CodeFontRowNew"
+        android:layout_width="@dimen/stock_1"
+        android:layout_height="match_parent"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/mg_left_title_child"
+        android:text="@string/brand" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1">
+
+        <com.orion.salesman._class.RobotoTextView
+            android:id="@+id/tvProductCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:singleLine="true"
+            android:text="A151521"
+            android:textColor="@color/colorBlue" />
+
+        <com.orion.salesman._class.RobotoTextView
+            android:id="@+id/tvTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:singleLine="true"
+            android:text="CP 12P"
+            android:textColor="@color/black" />
+
+    </FrameLayout>
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<com.orion.salesman._class.RobotoTextView-->
+    <!--android:id="@+id/tvProductCode"-->
+    <!--style="@style/CodeFontRowNew"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center|left"-->
+    <!--android:text="tvProductCode"-->
+    <!--android:textColor="@color/colorBlue" />-->
+
+    <!--<com.orion.salesman._class.RobotoTextView-->
+    <!--android:id="@+id/tvTwo"-->
+    <!--style="@style/CodeFontRowNew"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center|left"-->
+    <!--android:text="@string/productnm" />-->
+    <!--</LinearLayout>-->
+
+    <FrameLayout
+        android:layout_width="@dimen/stock_3"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/edStock"
+            style="@style/TextBoxInPut" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="@dimen/stock_3"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/edGood"
+            style="@style/TextBoxInPut" />
+    </FrameLayout>
+
+</LinearLayout>
+

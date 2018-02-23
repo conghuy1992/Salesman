@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<include layout="@layout/row_snack" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rowHeight_2_item"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal">
+
+            <com.orion.salesman._class.RobotoTextViewMedium
+                android:id="@+id/tvOne"
+                android:layout_width="@dimen/stock_1"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="@string/brand"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <com.orion.salesman._class.RobotoTextViewMedium
+                android:id="@+id/tvTwo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="@string/productnm"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <com.orion.salesman._class.RobotoTextViewMedium
+                android:layout_width="@dimen/stock_3"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/stockea"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <com.orion.salesman._class.RobotoTextViewMedium
+                android:layout_width="@dimen/stock_4"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/returnGoods"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcSnack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</FrameLayout>

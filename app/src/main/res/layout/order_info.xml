@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"
+                android:orientation="vertical">
+
+                <com.orion.salesman._class.RobotoTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="@dimen/marginLeftInfor"
+                    android:text="@string/orderInfo"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/order_img_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rowHeight_2_item"
+            android:background="@color/background_recyclewview"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.orion.salesman._class.RobotoTextView
+                    style="@style/CodeFontText"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/lastMonth" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.orion.salesman._class.RobotoTextView
+                        style="@style/CodeFontText"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:text="@string/order" />
+
+                    <com.orion.salesman._class.RobotoTextView
+                        style="@style/CodeFontText"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:text="@string/delivery" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.orion.salesman._class.RobotoTextView
+                    style="@style/CodeFontText"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/mtd" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.orion.salesman._class.RobotoTextView
+                        style="@style/CodeFontText"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:text="@string/order" />
+
+                    <com.orion.salesman._class.RobotoTextView
+                        style="@style/CodeFontText"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:text="@string/delivery" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.orion.salesman._class.RobotoTextView
+                    style="@style/CodeFontText"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/previousVisit" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.orion.salesman._class.RobotoTextView
+                        style="@style/CodeFontText"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:text="@string/order" />
+
+                    <com.orion.salesman._class.RobotoTextView
+                        style="@style/CodeFontText"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:text="@string/delivery" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcOrderInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <com.orion.salesman._class.RobotoTextView
+            android:id="@+id/tvNodata2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/nodata" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:id="@+id/btnHistory"
+        android:layout_gravity="right"
+        android:backgroundTint="@color/colorAccent"
+        android:text="@string/month3"
+        android:textColor="@color/white" />
+</FrameLayout>

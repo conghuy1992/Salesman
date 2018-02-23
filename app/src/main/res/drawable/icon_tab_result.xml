@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/actionbar_ic_result_active" android:state_selected="true" />
+
+    <item android:drawable="@drawable/actionbar_ic_result" android:state_selected="false" />
+
+</selector>  

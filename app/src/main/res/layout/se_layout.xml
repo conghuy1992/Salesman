@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heightTablayout">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/background_header" />
+
+            <LinearLayout
+                android:id="@+id/lnTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+
+                <com.orion.salesman._class.RobotoTextViewBold
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/marginTitle"
+                    android:gravity="center"
+                    android:text="@string/select_user"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textTitle" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rowHeight"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/se_width_spinner"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/se_margin_left"
+                android:gravity="center"
+                android:text="@string/Department"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_app" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/se_margin_left"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/user"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_app" />
+
+            <Button
+                android:layout_width="@dimen/se_width_button"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/apply"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/se_margin_left"
+            android:layout_marginTop="@dimen/se_margin_top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="@dimen/se_width_spinner"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/round_date">
+
+                    <Spinner
+                        android:id="@+id/spBranch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:overlapAnchor="false"
+                        android:paddingRight="0dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/se_margin_left"
+                    android:layout_weight="1" />
+
+
+                <Button
+                    android:layout_width="@dimen/se_width_button"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/apply"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="@dimen/se_width_spinner"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/round_date">
+
+                    <Spinner
+                        android:id="@+id/spArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:overlapAnchor="false"
+                        android:paddingRight="0dp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frManager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/se_margin_left"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_date">
+
+                    <Spinner
+                        android:id="@+id/spManager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:overlapAnchor="false"
+                        android:paddingRight="0dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tvManager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/se_margin_left"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_date"
+                    android:visibility="gone"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:layout_width="@dimen/se_width_button"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/apply"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="@dimen/se_width_spinner"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/round_date">
+
+                    <Spinner
+                        android:id="@+id/spOffice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:overlapAnchor="false"
+                        android:paddingRight="0dp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frGS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/se_margin_left"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_date"
+                    android:visibility="gone">
+
+                    <Spinner
+                        android:id="@+id/spGS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:overlapAnchor="false"
+                        android:paddingRight="0dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tvGs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/se_margin_left"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_date"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:layout_width="@dimen/se_width_button"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/apply"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/se_width_spinner"
+                    android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/se_margin_left"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_date">
+
+                    <Spinner
+                        android:id="@+id/spSM"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:overlapAnchor="false"
+                        android:paddingRight="0dp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="@dimen/se_width_button"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnApply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_small_button_red"
+                        android:text="@string/apply"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</FrameLayout>

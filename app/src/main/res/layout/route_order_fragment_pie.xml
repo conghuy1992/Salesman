@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rowHeight_2_item"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.55"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.orion.salesman._class.RobotoTextViewMedium
+                    style="@style/CodeFontText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="@string/productnm" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <com.orion.salesman._class.RobotoTextViewMedium
+                        style="@style/CodeFontText"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/unit" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <com.orion.salesman._class.RobotoTextViewMedium
+                            style="@style/CodeFontText"
+                            android:layout_weight="0.55"
+                            android:gravity="center"
+                            android:text="@string/spec" />
+
+                        <com.orion.salesman._class.RobotoTextViewMedium
+                            style="@style/CodeFontText"
+                            android:layout_weight="0.45"
+                            android:gravity="center"
+                            android:text="@string/amt" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.orion.salesman._class.RobotoTextViewMedium
+                    style="@style/CodeFontText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:text="@string/stock" />
+
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4">
+
+                    <com.orion.salesman._class.RobotoTextViewMedium
+                        style="@style/CodeFontText"
+                        android:gravity="center"
+                        android:text="@string/orderup" />
+
+                    <EditText
+                        android:id="@+id/edGood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/round_date"
+                        android:ems="3"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2">
+
+                    <com.orion.salesman._class.RobotoTextViewMedium
+                        style="@style/CodeFontText"
+                        android:gravity="center"
+                        android:text="@string/pmt"
+                        android:textAllCaps="true" />
+
+                    <com.orion.salesman._class.RobotoTextViewMedium
+                        android:id="@+id/tvPmt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.15"
+                    android:background="@color/title_menu"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <com.orion.salesman._class.RobotoTextViewMedium
+                            android:id="@+id/tvSaleManType"
+                            style="@style/CodeFontText"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/ds"
+                            android:textAllCaps="true"
+                            android:textSize="13sp" />
+
+                        <CheckBox
+                            android:id="@+id/cbSaleManType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/white" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</FrameLayout>

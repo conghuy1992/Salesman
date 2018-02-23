@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/rowHeight"
+    android:background="@drawable/border_dot_2"
+    android:orientation="horizontal">
+
+    <com.orion.salesman._class.RobotoTextView
+        android:id="@+id/tvOne"
+        style="@style/CodeFontRowNew"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="@dimen/border"
+        android:layout_weight="1"
+        android:background="@color/text_parent_child"
+        android:ellipsize="end"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/mg_left_title_child"
+        android:singleLine="true"
+        android:text="New Text" />
+
+    <com.orion.salesman._class.RobotoTextView
+        android:id="@+id/tvTwo"
+        android:layout_height="match_parent"
+        android:paddingRight="1dp"
+        android:textColor="@color/black"
+        android:gravity="center|right"
+        android:layout_width="@dimen/width_result_sales_report"
+        android:text="Text" />
+
+    <com.orion.salesman._class.RobotoTextView
+        android:id="@+id/tvToday"
+        android:layout_height="match_parent"
+        android:paddingRight="1dp"
+        android:textColor="@color/black"
+        android:gravity="center|right"
+        android:layout_width="@dimen/width_result_sales_report"
+        android:text="Text" />
+
+
+    <com.orion.salesman._class.RobotoTextView
+        android:id="@+id/tvThree"
+        android:layout_height="match_parent"
+        android:paddingRight="1dp"
+        android:textColor="@color/black"
+        android:gravity="center|right"
+        android:layout_width="@dimen/width_result_sales_report"
+        android:text="Text" />
+
+    <com.orion.salesman._class.RobotoTextView
+        android:id="@+id/tvFour"
+        android:layout_height="match_parent"
+        android:paddingRight="1dp"
+        android:textColor="@color/black"
+        android:gravity="center|right"
+        android:layout_width="@dimen/width_result_sales_report"
+        android:text="Text" />
+
+    <com.orion.salesman._class.RobotoTextView
+        android:id="@+id/tvFive"
+        android:layout_height="match_parent"
+        android:paddingRight="1dp"
+        android:textColor="@color/black"
+        android:gravity="center|right"
+        android:layout_width="@dimen/width_result_sales_report"
+        android:text="Text" />
+
+    <com.orion.salesman._class.RobotoTextView
+        android:id="@+id/tvSix"
+        android:layout_height="match_parent"
+        android:paddingRight="1dp"
+        android:textColor="@color/black"
+        android:gravity="center|right"
+        android:layout_width="@dimen/width_result_sales_report"
+        android:text="Text"/>
+
+    <com.orion.salesman._class.RobotoTextView
+        android:id="@+id/tvSeven"
+        android:layout_height="match_parent"
+        android:paddingRight="1dp"
+        android:textColor="@color/black"
+        android:gravity="center|right"
+        android:layout_width="@dimen/width_result_sales_report"
+        android:text="Text" />
+
+    <com.orion.salesman._class.RobotoTextView
+        android:id="@+id/tvEight"
+        android:layout_height="match_parent"
+        android:paddingRight="@dimen/last_column_margin_right"
+        android:textColor="@color/black"
+        android:gravity="center|right"
+        android:layout_width="@dimen/width_result_sales_report"
+        android:text="100.0%"/>
+
+</LinearLayout>

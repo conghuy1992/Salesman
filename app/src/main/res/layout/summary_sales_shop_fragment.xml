@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/summary_title" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_bottom_view"
+            android:layout_marginBottom="10dp"
+            android:background="@color/background_recyclewview" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rowHeight"
+            android:background="@color/background_recyclewview"
+            android:orientation="horizontal">
+
+            <com.orion.salesman._class.RobotoTextViewMedium
+                style="@style/CodeFontTextNoLine"
+                android:layout_weight="1"
+                android:text="@string/brand"
+                android:textAllCaps="true" />
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.orion.salesman._class.RobotoTextViewMedium
+                    style="@style/CodeFontTextNoLine"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:text="@string/totalshop"
+                    android:textAllCaps="true" />
+
+                <com.orion.salesman._class.RobotoTextViewMedium
+                    style="@style/CodeFontTextNoLine"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:text="@string/saleshop"
+                    android:textAllCaps="true" />
+
+                <com.orion.salesman._class.RobotoTextViewMedium
+                    style="@style/CodeFontTextNoLine"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:text="@string/percentSaleShop"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcSalesShop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <com.orion.salesman._class.RobotoTextView
+            android:id="@+id/tvNodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/nodata"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/lnBottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rowHeight"
+            android:background="@color/background_recyclewview"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.orion.salesman._class.RobotoTextViewMedium
+                android:id="@+id/tvOne"
+                style="@style/CodeFontTextNoLine"
+                android:layout_weight="1"
+                android:text="@string/Sum"
+                android:textAllCaps="true" />
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.orion.salesman._class.RobotoTextViewMedium
+                    android:id="@+id/tvTwo"
+                    style="@style/CodeFontTextNoLine"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:text="@string/totalshop"
+                    android:textAllCaps="true" />
+
+                <com.orion.salesman._class.RobotoTextViewMedium
+                    android:id="@+id/tvThree"
+                    style="@style/CodeFontTextNoLine"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:text="@string/saleshop"
+                    android:textAllCaps="true" />
+
+                <com.orion.salesman._class.RobotoTextViewMedium
+                    android:id="@+id/tvFour"
+                    style="@style/CodeFontTextNoLine"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:text="@string/p_tgt"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</FrameLayout>

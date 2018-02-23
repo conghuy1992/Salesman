@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@drawable/bg_dialog_calendar"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48">
+
+        <com.orion.salesman._class.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center|left"
+            android:text="@string/app_name"
+            android:textColor="@color/holo_red_light" />
+
+        <FrameLayout
+            android:id="@+id/frCalendar"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|right"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="25dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_date_range_black_24dp" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <com.orion.salesman._class.RobotoTextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background_recyclewview" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/lnyesterday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btnCenter"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:orientation="vertical">
+
+            <com.orion.salesman._class.RobotoTextView
+                android:id="@+id/tvpreDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/backgroud_round"
+                android:gravity="center"
+                android:text="08"
+                android:textColor="@color/holo_red_light"
+                android:textSize="40.5sp" />
+
+            <com.orion.salesman._class.RobotoTextView
+                android:id="@+id/tvMonth1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="2016-09" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/lntoday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btnCenter"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:orientation="vertical">
+
+            <com.orion.salesman._class.RobotoTextView
+                android:id="@+id/tvToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/backgroud_round"
+                android:gravity="center"
+                android:text="08"
+                android:textColor="@color/holo_red_light"
+                android:textSize="40.5sp" />
+
+            <com.orion.salesman._class.RobotoTextView
+                android:id="@+id/tvMonth2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="2016-09" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.orion.salesman._class.RobotoTextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/background_recyclewview" />
+
+    <com.orion.salesman._class.RobotoTextView
+        android:id="@+id/tvClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="15dp"
+        android:text="@string/dong"
+        android:textColor="@color/holo_red_light" />
+</LinearLayout>

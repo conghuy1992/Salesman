@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/rowHeightInputModify"
+    android:orientation="vertical">
+
+    <com.orion.salesman._class.RobotoTextView
+        android:id="@+id/tvOne"
+        style="@style/CodeFontRowNew"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/mg_left_title_child"
+        android:text="@string/productnm" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_bottom_view"
+        android:layout_gravity="bottom"
+        android:background="@color/background_recyclewview" />
+
+    <LinearLayout
+        android:id="@+id/lnClick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"></LinearLayout>
+
+</FrameLayout>

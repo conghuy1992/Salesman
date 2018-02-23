@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/result_title" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_bottom_view"
+            android:background="@color/background_recyclewview" />
+
+        <include layout="@layout/row_result_sale_shop" />
+
+
+        <com.orion.salesman._class.GeneralSwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rcSalesShop"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <include
+                        android:id="@+id/viewTotal"
+                        layout="@layout/result_sale_shop_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/rowHeight" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </com.orion.salesman._class.GeneralSwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvNodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/nodata"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</FrameLayout>

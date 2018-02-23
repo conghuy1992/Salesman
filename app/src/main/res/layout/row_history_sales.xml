@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/rowHeight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/S1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:paddingLeft="5dp"
+            android:text="abc"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/S2"
+            android:layout_width="50dp"
+            android:gravity="center|right"
+            android:paddingRight="2dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="abc"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/S3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="5dp"
+            android:gravity="center|left"
+            android:text="abc"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/S4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="abc"
+            android:gravity="center|right"
+            android:paddingRight="2dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/S5"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center|right"
+            android:paddingRight="10dp"
+            android:text="abc"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_bottom_view"
+        android:layout_gravity="bottom"
+        android:background="@color/background_recyclewview" />
+
+</FrameLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/rowHeight"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <com.orion.salesman._class.RobotoTextViewMedium
+        android:id="@+id/tvOne"
+        style="@style/CodeFontRowNew"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:text="@string/productnm"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.36"
+            android:orientation="vertical">
+
+            <com.orion.salesman._class.RobotoTextViewMedium
+                android:id="@+id/tvOrderRS"
+                style="@style/CodeFontRowNew"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/orderrs"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.orion.salesman._class.RobotoTextViewMedium
+                    android:id="@+id/tvTwo"
+                    style="@style/CodeFontRowNew"
+                    android:layout_weight="0.6"
+                    android:gravity="center|right"
+                    android:text="@string/qty"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+
+                <com.orion.salesman._class.RobotoTextViewMedium
+                    android:id="@+id/tvThree"
+                    style="@style/CodeFontRowNew"
+                    android:layout_weight="0.4"
+                    android:gravity="center|right"
+                    android:text="@string/amt"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.36"
+            android:orientation="vertical">
+
+            <com.orion.salesman._class.RobotoTextViewMedium
+                android:id="@+id/tvOrderDS"
+                style="@style/CodeFontRowNew"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/orderds"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.orion.salesman._class.RobotoTextViewMedium
+                    android:id="@+id/tvFour"
+                    style="@style/CodeFontRowNew"
+                    android:layout_weight="0.6"
+                    android:gravity="center|right"
+                    android:text="@string/qty"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+
+                <com.orion.salesman._class.RobotoTextViewMedium
+                    android:id="@+id/tvFive"
+                    style="@style/CodeFontRowNew"
+                    android:layout_weight="0.4"
+                    android:gravity="center|right"
+                    android:text="@string/amt"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.28"
+            android:orientation="horizontal">
+
+            <com.orion.salesman._class.RobotoTextViewMedium
+                android:id="@+id/tvSix"
+                style="@style/CodeFontRowNew"
+                android:text="@string/pmtyn"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

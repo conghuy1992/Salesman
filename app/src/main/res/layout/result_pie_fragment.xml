@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lnTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rowHeight"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <com.orion.salesman._class.RobotoTextView
+                style="@style/CodeFontTextNoLine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/brand" />
+
+            <com.orion.salesman._class.RobotoTextView
+                style="@style/CodeFontTextNoLine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:text="@string/brforestk" />
+
+            <com.orion.salesman._class.RobotoTextView
+                style="@style/CodeFontTextNoLine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:text="@string/in" />
+
+            <com.orion.salesman._class.RobotoTextView
+                style="@style/CodeFontTextNoLine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:text="@string/out" />
+
+            <com.orion.salesman._class.RobotoTextView
+                style="@style/CodeFontTextNoLine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:text="@string/curentstk" />
+
+        </LinearLayout>
+
+        <com.orion.salesman._class.GeneralSwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rcResultPie"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:id="@+id/lnBottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/rowHeight"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="6">
+
+                        <com.orion.salesman._class.RobotoTextView
+                            android:id="@+id/tv1"
+                            style="@style/CodeFontTextNoLine"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="@string/Sum" />
+
+                        <com.orion.salesman._class.RobotoTextView
+                            android:id="@+id/tv2"
+                            style="@style/CodeFontTextNoLine"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:text="@string/brforestk" />
+
+                        <com.orion.salesman._class.RobotoTextView
+                            android:id="@+id/tv3"
+                            style="@style/CodeFontTextNoLine"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:text="@string/in" />
+
+                        <com.orion.salesman._class.RobotoTextView
+                            android:id="@+id/tv4"
+                            style="@style/CodeFontTextNoLine"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:text="@string/out" />
+
+                        <com.orion.salesman._class.RobotoTextView
+                            android:id="@+id/tv5"
+                            style="@style/CodeFontTextNoLine"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:text="@string/curentstk" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/tvNodata"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:textAllCaps="false"
+                    android:background="@color/white"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/nodata" />
+            </RelativeLayout>
+        </com.orion.salesman._class.GeneralSwipeRefreshLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

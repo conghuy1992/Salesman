@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/rowHeightInputModify"
+    android:background="@drawable/border_dot"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.55"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/mg_left_title_child"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <com.orion.salesman._class.RobotoTextView
+                android:id="@+id/tvProductCode"
+                style="@style/CodeFontRowNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:gravity="center|left"
+                android:text="A51515"
+                android:textColor="@color/colorBlue" />
+
+            <com.orion.salesman._class.RobotoTextView
+                android:id="@+id/tvOne"
+                style="@style/CodeFontRowNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:gravity="center|left"
+                android:text="CP 12P" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.orion.salesman._class.RobotoTextView
+                    android:id="@+id/tvTwo"
+                    style="@style/CodeFontRowNew"
+                    android:layout_weight="1"
+                    android:text="@string/spec" />
+
+                <com.orion.salesman._class.RobotoTextView
+                    android:id="@+id/tvThree"
+                    style="@style/CodeFontRowNew"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/amt" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.45"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <com.orion.salesman._class.RobotoTextView
+            android:id="@+id/tvFour"
+            style="@style/CodeFontRowNew"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="@string/stock" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4">
+
+            <EditText
+                android:id="@+id/edOrder"
+                android:layout_width="@dimen/width_iniput"
+                android:layout_height="@dimen/height_iniput"
+                android:layout_gravity="center"
+                android:background="@drawable/round_date"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="4"
+                android:padding="5dp"
+                android:selectAllOnFocus="true" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2">
+
+            <ImageView
+                android:id="@+id/imgPMT"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:src="@drawable/img_pmt" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frSeven"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

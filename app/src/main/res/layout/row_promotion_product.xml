@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/rowHeight"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <com.orion.salesman._class.RobotoTextViewMedium
+        android:id="@+id/tvOne"
+        style="@style/CodeFontText"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:text="@string/productnm" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:text="@string/pmtdes">
+
+            <com.orion.salesman._class.RobotoTextViewMedium
+                android:id="@+id/tvTwo"
+                style="@style/CodeFontText"
+                android:text="@string/pmtdes" />
+
+            <Spinner
+                android:id="@+id/spPMT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:visibility="gone"></Spinner>
+        </FrameLayout>
+        <com.orion.salesman._class.RobotoTextViewMedium
+            style="@style/CodeFontText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:text="DS" />
+        <com.orion.salesman._class.RobotoTextViewMedium
+            android:id="@+id/tvThree"
+            style="@style/CodeFontText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:text="@string/mpt" />
+    </LinearLayout>
+
+</LinearLayout>

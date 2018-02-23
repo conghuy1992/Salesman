@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <com.orion.salesman._class.RobotoTextViewMedium
+        style="@style/CodeFontText"
+        android:layout_width="40dp"
+        android:gravity="center"
+        android:paddingRight="0dp"
+        android:paddingLeft="0dp"
+        android:orientation="horizontal"
+        android:text="@string/seq" />
+
+    <com.orion.salesman._class.RobotoTextViewMedium
+        style="@style/CodeFontText"
+        android:layout_weight="1"
+        android:text="@string/shop" />
+
+    <com.orion.salesman._class.RobotoTextViewMedium
+        style="@style/CodeFontText"
+        android:layout_width="65dp"
+        android:paddingRight="0dp"
+        android:text="@string/DISTANCE" />
+
+    <com.orion.salesman._class.RobotoTextViewMedium
+        style="@style/CodeFontText"
+        android:layout_width="50dp"
+        android:gravity="center"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:text="@string/mag"
+        android:textAllCaps="true" />
+
+    <com.orion.salesman._class.RobotoTextViewMedium
+        style="@style/CodeFontText"
+        android:layout_width="50dp"
+        android:gravity="center"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:text="@string/mtd"
+        android:textAllCaps="true" />
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.orion.salesman._class.RobotoTextViewMedium
+            style="@style/CodeFontText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/today" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.orion.salesman._class.RobotoTextViewMedium
+                style="@style/CodeFontText"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="@string/omi"
+                android:textAllCaps="true" />
+
+            <com.orion.salesman._class.RobotoTextViewMedium
+                style="@style/CodeFontText"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="@string/order" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.orion.salesman._class.RobotoTextViewMedium
+        android:id="@+id/tvStatus"
+        style="@style/CodeFontText"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:text="@string/nonshop" />
+</LinearLayout>

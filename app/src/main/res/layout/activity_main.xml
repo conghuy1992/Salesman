@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.orion.salesman.MainActivity">
+
+
+    <include layout="@layout/content_main" />
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/progressbar"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:text="Loading..."-->
+    <!--android:textSize="30sp" />-->
+    <TextView
+        android:id="@+id/tvNoty"
+        android:layout_width="@dimen/tv_noti"
+        android:layout_height="@dimen/tv_noti"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="45dp"
+        android:layout_marginLeft="220dp"
+        android:background="@drawable/circle_text_notifi"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_width="@dimen/tv_noti"
+        android:layout_height="@dimen/tv_noti"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="45dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/circle_text_notifi"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/frLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:id="@+id/lnStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/bg_dialog_confirm"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/logo_dialog" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <com.orion.salesman._class.RobotoTextView
+                            android:id="@+id/tvStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="Loading..."
+                            android:textColor="@color/black" />
+
+                        <com.orion.salesman._class.RobotoTextView
+                            android:id="@+id/tvCurrentDownload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:gravity="center|left"
+                            android:text="1/22"
+                            android:textColor="@color/black" />
+                    </FrameLayout>
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:max="100"
+                        android:scaleY="2" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

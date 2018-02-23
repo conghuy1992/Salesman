@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/rowHeight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rowHeight"
+        android:background="@color/background_recyclewview"
+        android:orientation="horizontal">
+
+        <com.orion.salesman._class.RobotoTextView
+            android:id="@+id/tvOne"
+            style="@style/CodeFontRowNew"
+            android:layout_weight="0.4"
+            android:background="@color/text_parent"
+            android:gravity="center|left"
+            android:text="@string/shopName" />
+
+        <com.orion.salesman._class.RobotoTextView
+            android:id="@+id/tvTwo"
+            style="@style/CodeFontRowNew"
+            android:layout_weight="0.6"
+            android:background="@color/text_parent"
+            android:gravity="center"
+            android:text="@string/menu_route" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_bottom_view"
+        android:layout_gravity="bottom"
+        android:background="@color/background_recyclewview" />
+
+    <RelativeLayout
+        android:id="@+id/btnDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"></RelativeLayout>
+</FrameLayout>
